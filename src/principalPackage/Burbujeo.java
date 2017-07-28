@@ -5,7 +5,6 @@ public class Burbujeo {
 	public static void sort(int v[]) {
 		int j = 0;
 		boolean cambio;
-
 		do {
 			cambio = false;
 			j++;
@@ -21,7 +20,6 @@ public class Burbujeo {
 	public static void reverseSort(int v[]) {
 		int j = 0;
 		boolean cambio;
-
 		do {
 			cambio = false;
 			j++;

@@ -11,7 +11,7 @@ public class Main {
 		mostrar(vector);
 		
 		pruebaBurbujeo(vector);
-		
+		pruebaSeleccion(vector);
 	}
 	
 	private static void pruebaBurbujeo(int vector[]) {
@@ -24,6 +24,20 @@ public class Main {
 		
 		int v2[] = vector.clone();
 		Burbujeo.reverseSort(v2);
+		System.out.println("Reverse Sort");
+		mostrar(v2);
+	}
+	
+	private static void pruebaSeleccion(int vector[]) {
+		System.out.println("SELECCION");
+		
+		int v1[] = vector.clone();
+		Seleccion.sort(v1);
+		System.out.println("Sort");
+		mostrar(v1);
+		
+		int v2[] = vector.clone();
+		Seleccion.reverseSort(v2);
 		System.out.println("Reverse Sort");
 		mostrar(v2);
 	}
