@@ -14,6 +14,7 @@ public class Main {
 		pruebaSeleccion(vector);
 		pruebaInsercion(vector);
 		pruebaShell(vector);
+		pruebaQuicksort(vector);
 	}
 	
 	private static void pruebaBurbujeo(int vector[]) {
@@ -68,6 +69,20 @@ public class Main {
 		
 		int v2[] = vector.clone();
 		Shell.reverseSort(v2);
+		System.out.println("Reverse Sort");
+		mostrar(v2);
+	}
+	
+	private static void pruebaQuicksort(int vector[]) {
+		System.out.println("QUICKSORT");
+		
+		int v1[] = vector.clone();
+		Quicksort.sort(v1);
+		System.out.println("Sort");
+		mostrar(v1);
+		
+		int v2[] = vector.clone();
+		Quicksort.reverseSort(v2);
 		System.out.println("Reverse Sort");
 		mostrar(v2);
 	}
