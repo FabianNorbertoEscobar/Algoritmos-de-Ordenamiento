@@ -21,6 +21,11 @@ public class Main {
 		System.out.println("Vector desordenado con claves consecutivas no repetidas");
 		mostrar(v1);
 		pruebaDistribucionParticular(v1);
+
+		int v2[] = { 14, 13, 15, 14, 14, 13, 15, 15, 13, 13 };
+		System.out.println("Vector desordenado con claves consecutivas repetidas");
+		mostrar(v2);
+		pruebaDistribucionGeneral(v2);
 	}
 
 	private static void pruebaBurbujeo(int vector[]) {
@@ -106,10 +111,10 @@ public class Main {
 		System.out.println("Reverse Sort");
 		mostrar(v2);
 	}
-	
+
 	private static void pruebaDistribucionParticular(int vector[]) {
 		System.out.println("DISTRIBUCIÓN PARTICULAR");
-		
+
 		int v1[] = vector.clone();
 		DistribucionParticular.sort(v1);
 		System.out.println("Sort");
@@ -117,6 +122,20 @@ public class Main {
 
 		int v2[] = vector.clone();
 		DistribucionParticular.reverseSort(v2);
+		System.out.println("Reverse Sort");
+		mostrar(v2);
+	}
+	
+	private static void pruebaDistribucionGeneral(int vector[]) {
+		System.out.println("DISTRIBUCIÓN GENERAL");
+
+		int v1[] = vector.clone();
+		DistribucionGeneral.sort(v1);
+		System.out.println("Sort");
+		mostrar(v1);
+
+		int v2[] = vector.clone();
+		DistribucionGeneral.reverseSort(v2);
 		System.out.println("Reverse Sort");
 		mostrar(v2);
 	}

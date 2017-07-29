@@ -43,4 +43,5 @@ public class DistribucionParticular {
 		}
 		return maximo;
 	}
+	
 }
