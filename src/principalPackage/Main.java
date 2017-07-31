@@ -19,6 +19,7 @@ public class Main {
 		pruebaCocktailSort(vector);
 		pruebaBogoSort(vector);
 		pruebaPancakeSort(vector);
+		pruebaHeapSort(vector);
 
 		int v1[] = { 17, 19, 10, 15, 13, 12, 16, 14, 11, 18 };
 		System.out.println("Vector desordenado con claves consecutivas no repetidas");
@@ -153,6 +154,20 @@ public class Main {
 
 		int v2[] = vector.clone();
 		PancakeSort.reverseSort(v2);
+		System.out.println("Reverse Sort");
+		mostrar(v2);
+	}
+	
+	private static void pruebaHeapSort(int vector[]) {
+		System.out.println("HEAPSORT");
+
+		int v1[] = vector.clone();
+		HeapSort.sort(v1);
+		System.out.println("Sort");
+		mostrar(v1);
+
+		int v2[] = vector.clone();
+		HeapSort.reverseSort(v2);
 		System.out.println("Reverse Sort");
 		mostrar(v2);
 	}
